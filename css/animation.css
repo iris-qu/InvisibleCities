@@ -1,0 +1,83 @@
+/*
+==============================================
+fadeZoomIn
+==============================================
+*/
+
+.fadeZoomIn{
+	animation-name: fadeZoomIn;
+	-webkit-animation-name: fadeZoomIn;	
+
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes fadeZoomIn {
+	0% {
+		transform: scale(0.5);
+		opacity: 0.0;		
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes fadeZoomIn {
+	0% {
+		-webkit-transform: scale(0.5);
+		opacity: 0.0;		
+	}
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+/*
+==============================================
+fadeIn
+==============================================
+*/
+
+.fadeIn{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+
+	animation-duration: 4s;	
+	-webkit-animation-duration: 4s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes fadeIn {
+	0% {
+		
+		opacity: 0.0;		
+	}
+	100% {
+		
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		
+		opacity: 0.0;		
+	}
+	100% {
+		
+		opacity: 1;	
+	}		
+}
+
+
