@@ -49,8 +49,8 @@ fadeIn
 	animation-name: fadeIn;
 	-webkit-animation-name: fadeIn;	
 
-	animation-duration: 4s;	
-	-webkit-animation-duration: 4s;
+	animation-duration: 3.5s;	
+	-webkit-animation-duration: 3.5s;
 
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;		
@@ -70,6 +70,47 @@ fadeIn
 }
 
 @-webkit-keyframes fadeIn {
+	0% {
+		
+		opacity: 0.0;		
+	}
+	100% {
+		
+		opacity: 1;	
+	}		
+}
+
+/*
+==============================================
+SlowFadeIn
+==============================================
+*/
+
+.SlowFadeIn{
+	animation-name: SlowFadeIn;
+	-webkit-animation-name: SlowFadeIn;	
+
+	animation-duration: 6s;	
+	-webkit-animation-duration: 6s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes SlowFadeIn {
+	0% {
+		
+		opacity: 0.0;		
+	}
+	100% {
+		
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes SlowFadeIn {
 	0% {
 		
 		opacity: 0.0;		

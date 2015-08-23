@@ -1,5 +1,3 @@
-
-
     var canvasHome;
 
     var numPoints = 5;

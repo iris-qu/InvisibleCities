@@ -60,6 +60,7 @@ $(document).ready(function(){
 				particles.sortParticles = true;
 				scene.add( particles );
 
+
 			}
 
 			function ball() {
@@ -82,9 +83,8 @@ $(document).ready(function(){
 				
 				particles.rotation.y = Date.now() * 0.00005;
 
-				renderer.render( scene, camera );
 				controls.update();
-
+				render();
 			}
 
 			function render() {

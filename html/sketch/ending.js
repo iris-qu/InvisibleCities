@@ -1,6 +1,8 @@
-based on http://brangerbriz.net/labs/threejs_playGnd
+// based on http: brangerbriz.net/labs/threejs_playGnd
 
-if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+
+$(document).ready(function(){
+  if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
       
       var camera, scene, renderer;
       var geometry, material, mesh;
@@ -11,10 +13,10 @@ if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
         renderer = new THREE.WebGLRenderer();
         renderer.setSize( W, H );
 
-        mainbtn = document.getElementById( 'mainbtn' );
-        document.body.appendChild( mainbtn );
+        endTri = document.getElementById( 'endTri' );
+        document.body.appendChild( endTri );
        
-        mainbtn.appendChild( renderer.domElement );
+        endTri.appendChild( renderer.domElement );
 
       
         camera = new THREE.PerspectiveCamera( 50, W/H, 1, 10000 );
@@ -44,3 +46,5 @@ if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
       setup();
       draw();
+
+});

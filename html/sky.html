@@ -5,19 +5,35 @@
 	<title>sky</title>
 
 	<!--CSS-->
-	<link rel="shortcut icon" type="image/png" href="pics/favicon.png">
+	<link rel="shortcut icon" type="image/png" href="../la.png">
 	<link href='http://fonts.googleapis.com/css?family=Exo:300|Josefin+Sans:300' rel='stylesheet' type='text/css'>
 	<link href="../css/animation.css" rel="stylesheet"> 
-	<link href="../css/main.css" rel="stylesheet">    
+	<link href="../css/main.css" rel="stylesheet"> 
+
+	<!--Processing-->
+	<script type="text/javascript" src="processing.js"></script>   
 	
 </head>
 <body>
 	<section id="sky">
+		<!--Based on http://www.openprocessing.org/sketch/96935-->
+		<div id="exitTri">
+			<a href="ending.html">
+				<canvas id="dddtriangle" class="SlowFadeIn" data-processing-sources="triangle.pde"></canvas>
+			</a>
+		</div>
 		<div class="headWrapper">
 			<h2 class="fadeIn"> Chapter 5 </h1>
 			<h1 class="fadeIn"> CITIES & THE SKY </h1>
-			<h3 class="fadeIn"> The sky is filled with stars. "There is the blueprint," they say. </h3>
+			<h3 class="fadeIn"> The sky is filled with stars<br> "There is the blueprint," they say</h3>
 		</div>
+
+		<div id="instruction">
+			<p class="SlowFadeIn">
+				- Press [z] to color your star - 
+			</p>
+		</div>
+
 		<div class="menu">
 			<span class="star">
 				<a href="memory.html">

@@ -102,8 +102,6 @@ $(document).ready(function(){
 						up();
 					}else if(e.keyCode == 40) {
 						down();
-					}else if(e.keyCode == 32) {
-						setup();
 					}else {
 						console.log('oh snap');
 					}
